@@ -67,19 +67,38 @@ end
 # pl3 = Pledge.new(p1, 75, u1)
 # pl4 = Pledge.new(p2, 75, u1)
 # pl5 = Pledge.new(p2, 75, u2)
+#
+# p1 = Passenger.new("George")
+# p2 = Passenger.new("Francis")
+# p3 = Passenger.new("Norbet")
+#
+# d1 = Driver.new("Zenith") #100
+# d2 = Driver.new("Zachery") #50
+# d3 = Driver.new("Zion") #200
+# d4 = Driver.new("Zeus") #150
+#
+# r1 = Ride.new(p1, d1, 100)
+# r2 = Ride.new(p3, d2, 50)
+# r3 = Ride.new(p1, d3, 200)
+# r4 = Ride.new(p2, d4, 150)
 
-p1 = Passenger.new("George")
-p2 = Passenger.new("Francis")
-p3 = Passenger.new("Norbet")
+l1 = Location.new("Puregym")
+l2 = Location.new("Virgym")
+l3 = Location.new("Fitgym")
 
-d1 = Driver.new("Zenith") #100
-d2 = Driver.new("Zachery") #50
-d3 = Driver.new("Zion") #200
-d4 = Driver.new("Zeus") #150
+t1 = Trainer.new("Jon")
+t2 = Trainer.new("Jam")
+t3 = Trainer.new("Jay")
 
-r1 = Ride.new(p1, d1, 100)
-r2 = Ride.new(p3, d2, 50)
-r3 = Ride.new(p1, d3, 200)
-r4 = Ride.new(p2, d4, 150)
+c1 = Client.new("Peter")
+c2 = Client.new("Bjorn")
+c3 = Client.new("John")
+
+c1.assign_trainer(t1)
+c2.assign_trainer(t1)
+c3.assign_trainer(t2)
+
+t1.assign_location(l1)
+t2.assign_location(l2)
 
 Pry.start
