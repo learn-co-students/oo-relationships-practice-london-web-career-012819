@@ -51,21 +51,35 @@ end
 # s1 = Show.new("Avengers", [c1,c3,c5,c7])
 # s2 = Show.new("Friends", [c1,c3])
 # s3 = Show.new("Partridges", [c2,c4,c6])
+#
+# u1 = User.new("Derek")
+# u2 = User.new("Keith")
+# u3 = User.new("Ricky")
+# u4 = User.new("Frank")
+#
+# p1 = Project.new("Proj1", 250, u1)
+# p2 = Project.new("Proj2", 300, u2)
+# p3 = Project.new("Proj3", 500, u1)
+# p4 = Project.new("Proj4", 500, u3)
+#
+# pl1 = Pledge.new(p1, 50, u1)
+# pl2 = Pledge.new(p1, 350, u1)
+# pl3 = Pledge.new(p1, 75, u1)
+# pl4 = Pledge.new(p2, 75, u1)
+# pl5 = Pledge.new(p2, 75, u2)
 
-u1 = User.new("Derek")
-u2 = User.new("Keith")
-u3 = User.new("Ricky")
-u4 = User.new("Frank")
+p1 = Passenger.new("George")
+p2 = Passenger.new("Francis")
+p3 = Passenger.new("Norbet")
 
-p1 = Project.new("Proj1", 250, u1)
-p2 = Project.new("Proj2", 300, u2)
-p3 = Project.new("Proj3", 500, u1)
-p4 = Project.new("Proj4", 500, u3)
+d1 = Driver.new("Zenith") #100
+d2 = Driver.new("Zachery") #50
+d3 = Driver.new("Zion") #200
+d4 = Driver.new("Zeus") #150
 
-pl1 = Pledge.new(p1, 50, u1)
-pl2 = Pledge.new(p1, 350, u1)
-pl3 = Pledge.new(p1, 75, u1)
-pl4 = Pledge.new(p2, 75, u1)
-pl5 = Pledge.new(p2, 75, u2)
+r1 = Ride.new(p1, d1, 100)
+r2 = Ride.new(p3, d2, 50)
+r3 = Ride.new(p1, d3, 200)
+r4 = Ride.new(p2, d4, 150)
 
 Pry.start
