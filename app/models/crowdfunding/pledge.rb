@@ -1,13 +1,22 @@
 class Pledge
 
-  attr_reader :project, :user
+  attr_accessor :project, :pledger, :amount, :manager
 
   @@all = []
 
-  def initialize(project, user)
+  def initialize(project, pledger, amount)
     @project = project
-    @user = user
+    @pledger = pledger
+    @amount = amount
     @@all << self
+  end
+
+  def self.all
+    @@all
+  end
+
+  def user
+    @pledger
   end
 
 end
