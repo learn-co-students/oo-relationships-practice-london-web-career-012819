@@ -10,31 +10,31 @@ You are building an app for a Lyft/Uber competitor
 Write out the relationships using has_many, belongs_to and has_many_through. Create the necessary methods to connect these classes.
 
 #### Passenger
-- #drivers
+- [ ] #drivers
   - returns all drivers a passenger has ridden with
-- #rides
+- [ ] #rides
   - returns all rides a passenger has been on
-- .all
+- [ ] .all
   - returns an array of all passengers
-- #total_distance
+- [ ] #total_distance
   - should calculate the total distance the passenger has travelled with the service
-- .premium_members
+- [ ] .premium_members
   - should find all passengers who have travelled over 100 miles with the service
 
 #### Driver
-- #passengers
+- [ ] #passengers
   - returns all passengers a driver has had
-- #rides
+- [ ] #rides
   - returns all rides a driver has made
-- .all
+- [ ] .all
   - returns an array of all drivers
-- .mileage_cap(distance)
+- [ ] .mileage_cap(distance)
   - takes an argument of a distance (float) and returns all drivers who have exceeded that mileage
 
 #### Ride
-- #passenger
+- [ ] #passenger
   - returns the passenger object for that ride
-- #driver
+- [ ] #driver
   - returns the driver object for that ride
-- .average_distance
+- [ ] .average_distance
   - should find the average distance of all rides
