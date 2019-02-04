@@ -21,21 +21,28 @@ end
 # trip3 = Trip.new(sarah, listing3)
 # trip4 = Trip.new(sam, listing1)
 
-bakery1 = Bakery.new("Joe's")
-bakery2 = Bakery.new("ACME")
+# bakery1 = Bakery.new("Joe's")
+# bakery2 = Bakery.new("ACME")
+#
+# dessert1 = Dessert.new(bakery1, "Crumble")
+# dessert2 = Dessert.new(bakery2, "Spotted Dick")
+# dessert3 = Dessert.new(bakery2, "Deep Fried Snickers")
+#
+# ingredient1 = Ingredient.new(dessert1, "apples", 200)
+# ingredient2 = Ingredient.new(dessert2, "flour", 100)
+# ingredient3 = Ingredient.new(dessert3, "snickers", 400)
+# ingredient4 = Ingredient.new(dessert3, "oil", 400)
+# ingredient5 = Ingredient.new(dessert2, "raisins", 100)
 
-dessert1 = Dessert.new(bakery1, "Crumble")
-dessert2 = Dessert.new(bakery2, "Spotted Dick")
-dessert3 = Dessert.new(bakery2, "Deep Fried Snickers")
+user1 = User.new("cody_codes")
+user2 = User.new("doctor_e_ville")
 
-ingredient1 = Ingredient.new(dessert1, "apples", 200)
-ingredient2 = Ingredient.new(dessert2, "flour", 100)
-ingredient3 = Ingredient.new(dessert3, "snickers", 400)
-ingredient4 = Ingredient.new(dessert3, "oil", 400)
-ingredient5 = Ingredient.new(dessert2, "raisins", 100)
-# ingredient4 = Ingredient.new(75)
-# ingredient5 = Ingredients.new(10
+project1
+project2
 
-puts bakery1.name
+pledge1
+pledge2
+
+
 
 binding.pry
